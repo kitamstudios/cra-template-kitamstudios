@@ -1,6 +1,8 @@
-name: Build
+name: Continuos Deployment
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
 
 jobs:
   build:
@@ -33,7 +35,7 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-              az storage blob upload-batch --account-name ksapps -d '$web/craks' -s ./build
+              az storage blob upload-batch --account-name ksapplications -d '$web/craks' -s ./build
 
       - name: logout
         run: |

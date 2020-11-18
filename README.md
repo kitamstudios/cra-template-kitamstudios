@@ -24,6 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [x] Build, lint, unit test github workflow
   - [x] Deploy to Azure Blob Storage github workflow
 - [ ] Redux code splitting per route
+- [ ] PWA
 
 ## Useful documents
 
@@ -32,7 +33,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - https://create-react-app.dev/
 - https://redux.js.org/
 - https://styled-components.com/
-- https://react-bootstrap.netlify.app/
+- https://react-bootstrap.github.io/
 
 ## Available Scripts
 
