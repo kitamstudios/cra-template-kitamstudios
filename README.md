@@ -1,15 +1,16 @@
-[![Continous Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuos%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuos+Deployment%22)
+[![Continuos Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuos%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuos+Deployment%22) [![Deployment](https://api.netlify.com/api/v1/badges/cd2d2e48-8992-440a-a3db-23211409c94e/deploy-status)](https://app.netlify.com/sites/cra-template-kitamstudios/deploys)
 
 # Kitam Studios - Template for React Applications
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Deployed at https://cra-template-kitamstudios.netlify.app
 
 ## Available out of the box
 
 - Core
   - [x] [Folder structure](https://maxrozen.com/guidelines-improve-react-app-folder-structure/)
   - [x] Code splitting per route
-  - [x] HTML base for multiple sites per azure storage account
   - [x] Unit tests: enzyme + jest
   - [x] editorconfig, eslint, stylelint, prettier
   - [x] husky integration
@@ -24,7 +25,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [x] Bootstrap for styling
 - CI/CD
   - [x] Build, lint, unit test github workflow
-  - [x] Deploy to Azure Blob Storage github workflow
+  - [x] Deploy to Netlify
+- [ ] Footer with version
 - [ ] Redux code splitting per route
 - [ ] PWA
 

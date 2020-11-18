@@ -17,7 +17,7 @@ export default class Page2 extends React.Component<Page2Props, Page2State> {
   render() {
     return (
       <>
-        <SC.SharedComponent1 name="Page 1" />
+        <SC.SharedComponent1 name="Page 2" />
         <div>
           This is page 2 - {this.props.message} {this.state.count}
         </div>
