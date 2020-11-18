@@ -1,0 +1,40 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install
+        run: yarn --no-progress --non-interactive --no-lockfile
+
+      - name: Lint code
+        run: yarn lint
+
+      - name: Lint CSS
+        run: yarn lint
+
+      - name: Test
+        run: CI=true yarn test -- --colors --coverage
+
+      - name: Build
+        run: CI=true yarn build
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI script
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+              az storage blob upload-batch --account-name ksapps -d '$web/craks' -s ./build
+
+      - name: logout
+        run: |
+              az logout

@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# Kitam Studios - Template for React Applications
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available out of the box
+
+- Core
+  - [x] [Folder structure](https://maxrozen.com/guidelines-improve-react-app-folder-structure/)
+  - [x] Code splitting per route
+  - [x] HTML base for multiple sites per azure storage account
+  - [x] Unit tests: enzyme + jest
+  - [x] editorconfig, eslint, stylelint, prettier
+  - [x] husky integration
+  - [ ] AppInsights
+- VSCode
+  - [x] editorconfig, eslint, stylelint, prettier
+  - [x] configure settings
+  - [x] suggested extensions
+  - [x] F5 debugging from VSCode
+- Styling
+  - [x] styled-components
+  - [x] Bootstrap for styling
+- CI/CD
+  - [x] Build, lint, unit test github workflow
+  - [x] Deploy to Azure Blob Storage github workflow
+- [ ] Redux code splitting per route
+
+## Useful documents
+
+- https://github.com/typescript-cheatsheets/react
+- https://reactjs.org/tutorial/tutorial.html
+- https://create-react-app.dev/
+- https://redux.js.org/
+- https://styled-components.com/
+- https://react-bootstrap.netlify.app/
 
 ## Available Scripts
 
@@ -44,3 +76,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
