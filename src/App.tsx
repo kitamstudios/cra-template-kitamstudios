@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Router>
+      <Router basename="/craks">
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
             <Route exact path="/" component={Page1} />

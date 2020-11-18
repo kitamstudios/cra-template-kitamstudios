@@ -1,3 +1,5 @@
+[![Continous Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuos%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuos+Deployment%22)
+
 # Kitam Studios - Template for React Applications
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -28,12 +30,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Useful documents
 
-- https://github.com/typescript-cheatsheets/react
-- https://reactjs.org/tutorial/tutorial.html
-- https://create-react-app.dev/
-- https://redux.js.org/
-- https://styled-components.com/
-- https://react-bootstrap.github.io/
+- [React+TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react)
+- [Official Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
+- [Create React App](https://create-react-app.dev/)
+- [Redux](https://redux.js.org/)
+- [styled-components](https://styled-components.com/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
 
 ## Available Scripts
 
