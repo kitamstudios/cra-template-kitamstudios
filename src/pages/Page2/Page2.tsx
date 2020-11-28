@@ -5,23 +5,24 @@ export type Page2Props = {
   message: string
 }
 
-type Page2State = {
-  count: number
+export const Page2 = (props: Page2Props): JSX.Element => {
+  const [count, setCount] = React.useState(0)
+
+  const { message } = props
+
+  const handleClick = () => setCount(count + 1)
+
+  return (
+    <div>
+      <SC.SharedComponent1 name="Page 2" />
+      <p>
+        This is page 2 - {message}. You clicked {count} times
+      </p>
+      <button type="button" onClick={handleClick}>
+        Click me
+      </button>
+    </div>
+  )
 }
 
-export default class Page2 extends React.Component<Page2Props, Page2State> {
-  state: Page2State = {
-    count: 0,
-  }
-
-  render() {
-    return (
-      <>
-        <SC.SharedComponent1 name="Page 2" />
-        <div>
-          This is page 2 - {this.props.message} {this.state.count}
-        </div>
-      </>
-    )
-  }
-}
+export default Page2

@@ -1,34 +1,37 @@
-[![Continuos Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuos%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuos+Deployment%22) [![Deployment](https://api.netlify.com/api/v1/badges/cd2d2e48-8992-440a-a3db-23211409c94e/deploy-status)](https://app.netlify.com/sites/cra-template-kitamstudios/deploys)
+[![Continuous Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuous%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuous+Deployment%22) [![Deployment](https://api.netlify.com/api/v1/badges/cd2d2e48-8992-440a-a3db-23211409c94e/deploy-status)](https://app.netlify.com/sites/cra-template-kitamstudios/deploys)
 
 # Kitam Studios - Template for React Applications
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Deployed at https://cra-template-kitamstudios.netlify.app
+Deployed at [craks-1](https://apps.kitamstudios.com/craks-1) and [craks-2](https://apps.kitamstudios.com/craks-2)
 
 ## Available out of the box
 
 - Core
   - [x] [Folder structure](https://maxrozen.com/guidelines-improve-react-app-folder-structure/)
   - [x] Code splitting per route
-  - [x] Unit tests: enzyme + jest
-  - [x] editorconfig, eslint, stylelint, prettier
+  - [x] Unit tests: jest
+  - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] husky integration
+  - [ ] Multiple react sites per root folder [.env, packagejson-homepage, hashrouter, html-basepath]
   - [ ] AppInsights
+  - [ ] Icons library
+  - [ ] Placeholder images
 - VSCode
-  - [x] editorconfig, eslint, stylelint, prettier
+  - [ ] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] configure settings
   - [x] suggested extensions
   - [x] F5 debugging from VSCode
 - Styling
   - [x] styled-components
-  - [x] Bootstrap for styling
+  - [ ] tailwindcss
+  - [ ] center screen
+  - [ ] theming
 - CI/CD
   - [x] Build, lint, unit test github workflow
-  - [x] Deploy to Netlify
+  - [x] Deploy to Azure blob storage
+- [ ] PWA => scope with multiple sites per, install offline prompt, skipwaiting
 - [ ] Footer with version
 - [ ] Redux code splitting per route
-- [ ] PWA
 
 ## Useful documents
 

@@ -5,13 +5,15 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [140],
+  "editor.rulers": [120],
   "editor.formatOnSave": false,
   "files.encoding": "utf8",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+  "files.eol": "\r\n",
 
   "search.exclude": {
     "node_modules/**": true
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
 }

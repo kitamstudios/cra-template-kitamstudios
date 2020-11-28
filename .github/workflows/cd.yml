@@ -1,8 +1,11 @@
-name: Continuos Deployment
+name: Continuous Deployment
 
 on:
   push:
     branches: [ master ]
+
+env:
+  REACT_APP_VERSION: ${{ github.run_id }}-${{ github.run_number }}
 
 jobs:
   continuos-deployment:
@@ -14,19 +17,38 @@ jobs:
         run: yarn --no-progress --non-interactive --no-lockfile
 
       - name: Lint code
-        run: yarn lint
-
-      - name: Lint CSS
-        run: yarn lint
+        run:
+          yarn lint
+          yarn lint:css
 
       - name: Test
-        run: CI=true yarn test -- --colors --coverage
+        run: yarn test --colors --coverage
 
-      - name: Build
-        run: CI=true yarn build
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS_KSAPPLICATIONS_STORAGE }}
 
-      - name: Deploy Site
+      - name: Build en
+        run: yarn build
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: netlify deploy --dir=build --prod
+          REACT_APP_LANG_ID: en
+          REACT_APP_RELATIVE_ROOT: /cracks-1 # NOTE: Ensure no trailing '/'
+
+      - name: Set PWA scope for en
+        uses: benday-inc/set-property-value-in-appsettings@main
+        with:
+          pathtosettingsfile: './build/manifest.json'
+          keyname1: 'scope'
+          valuetoset: '/cracks-1/'
+
+      - name: Deploy en
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+              az storage blob upload-batch --account-name ksapplications -d '$web\cracks-1' -s ./build
+
+      - name: Azure Logout
+        run: |
+              az logout
