@@ -12,11 +12,13 @@ jobs:
 
       - name: Create build version
         id: createbuildversion
-        run: echo "::set-output name=buildversion::$(date +'%y.%m%d').${{ github.run_number }}"
+        run:
+          echo "::set-output name=buildversion::$(date +'%y.%m%d').${{ github.run_number }}"
+          echo "Created version ${{steps.createbuildversion.outputs.buildversion}}"
 
-      - name: Generate version number
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Check build version
+        run:
+          echo "Using version ${{steps.createbuildversion.outputs.buildversion}}"
 
       - name: Install
         run: yarn --no-progress --non-interactive --no-lockfile
@@ -24,6 +26,9 @@ jobs:
       - name: Lint code
         run:
           yarn lint
+
+      - name: Lint css
+        run:
           yarn lint:css
 
       - name: Test
