@@ -23,7 +23,7 @@ const X = styled.div`
   background-color: black;
 `
 
-export const SharedComponent1 = ({ name }: SharedComponent1Props): JSX.Element => {
+export const SharedComponent1 = ({ name }: SharedComponent1Props) => {
   return (
     <X>
       <Spacer />

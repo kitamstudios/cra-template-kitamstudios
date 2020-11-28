@@ -6,7 +6,7 @@ export type Page1Props = {
   message: string
 }
 
-export const Page1 = (props: Page1Props): JSX.Element => {
+export const Page1 = (props: Page1Props) => {
   const [count, setCount] = React.useState(0)
 
   const { message } = props

@@ -5,7 +5,7 @@ export type Page2Props = {
   message: string
 }
 
-export const Page2 = (props: Page2Props): JSX.Element => {
+export const Page2 = (props: Page2Props) => {
   const [count, setCount] = React.useState(0)
 
   const { message } = props

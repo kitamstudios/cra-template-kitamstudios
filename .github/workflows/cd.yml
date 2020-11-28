@@ -4,14 +4,19 @@ on:
   push:
     branches: [ master ]
 
-env:
-  REACT_APP_VERSION: ${{ github.run_id }}-${{ github.run_number }}
-
 jobs:
   continuos-deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+
+      - name: Create build version
+        id: createbuildversion
+        run: echo "::set-output name=buildversion::$(date +'%y.%m%d').${{ github.run_number }}"
+
+      - name: Generate version number
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
       - name: Install
         run: yarn --no-progress --non-interactive --no-lockfile
@@ -32,8 +37,8 @@ jobs:
       - name: Build en
         run: yarn build
         env:
-          REACT_APP_LANG_ID: en
           REACT_APP_RELATIVE_ROOT: /cracks-1 # NOTE: Ensure no trailing '/'
+          REACT_APP_VERSION: ${{steps.createbuildversion.outputs.buildversion}}
 
       - name: Set PWA scope for en
         uses: benday-inc/set-property-value-in-appsettings@main

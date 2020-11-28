@@ -1,8 +1,8 @@
-[![Continuous Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuous%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuous+Deployment%22) [![Deployment](https://api.netlify.com/api/v1/badges/cd2d2e48-8992-440a-a3db-23211409c94e/deploy-status)](https://app.netlify.com/sites/cra-template-kitamstudios/deploys)
+[![Continuous Deployment](https://github.com/kitamstudios/cra-template-kitamstudios/workflows/Continuous%20Deployment/badge.svg)](https://github.com/kitamstudios/cra-template-kitamstudios/actions?query=workflow%3A%22Continuous+Deployment%22)
 
 # Kitam Studios - Template for React Applications
 
-Deployed at [craks-1](https://apps.kitamstudios.com/craks-1) and [craks-2](https://apps.kitamstudios.com/craks-2)
+Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
 
 ## Available out of the box
 
@@ -12,26 +12,28 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1) and [craks-2](https
   - [x] Unit tests: jest
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] husky integration
-  - [ ] Multiple react sites per root folder [.env, packagejson-homepage, hashrouter, html-basepath]
+  - [x] Footer with version
   - [ ] AppInsights
-  - [ ] Icons library
-  - [ ] Placeholder images
+  - [ ] Icons library / Placeholder images
+  - [ ] Loader spinner
+  - [ ] PWA: manifest.json, Icon placeholders, Install offline prompt, Update check
 - VSCode
-  - [ ] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
+  - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] configure settings
   - [x] suggested extensions
   - [x] F5 debugging from VSCode
 - Styling
   - [x] styled-components
-  - [ ] tailwindcss
-  - [ ] center screen
-  - [ ] theming
+  - [x] tailwindcss, twin.macro
 - CI/CD
   - [x] Build, lint, unit test github workflow
   - [x] Deploy to Azure blob storage
-- [ ] PWA => scope with multiple sites per, install offline prompt, skipwaiting
-- [ ] Footer with version
-- [ ] Redux code splitting per route
+  - [x] Multiple react sites per root folder [.env, homepage in package.json, HashRouter, base href in index.html, manifest.json replace scope during deploy]
+
+- TODO
+  - [ ] Create config along the lines of https://github.com/wesbos/eslint-config-wesbos
+  - [ ] Theming
+  - [ ] Redux code splitting per route
 
 ## Useful documents
 
@@ -40,7 +42,7 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1) and [craks-2](https
 - [Create React App](https://create-react-app.dev/)
 - [Redux](https://redux.js.org/)
 - [styled-components](https://styled-components.com/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
 ## Available Scripts
 

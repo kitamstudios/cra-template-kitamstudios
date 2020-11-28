@@ -10,7 +10,7 @@ const StyledButton = styled.div`
   border: 2px solid palevioletred;
   border-radius: 3px;
 `
-export function Page1Component1({ cname }: Page1Component1Props): JSX.Element {
+export const Page1Component1 = ({ cname }: Page1Component1Props) => {
   return (
     <div>
       <div>

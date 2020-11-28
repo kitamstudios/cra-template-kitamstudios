@@ -2,6 +2,7 @@
   "name": "@kitamstudios/cra-template-kitamstudios",
   "version": "2.0.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
