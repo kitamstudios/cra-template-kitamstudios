@@ -13,8 +13,8 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] husky integration
   - [x] Footer with version
-  - [ ] AppInsights
   - [ ] Icons library / Placeholder images
+  - [x] AppInsights - Component tracking + Error boundary
   - [ ] Loader spinner
   - [ ] PWA: manifest.json, Icon placeholders, Install offline prompt, Update check
 - VSCode

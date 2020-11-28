@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
-    "start": "yarn run watch:css & react-scripts start",
+    "start": "react-scripts start",
     "build": "yarn run build:css & react-scripts build",
     "test": "react-scripts test",
     "lint": "tsc --noEmit && eslint .",
@@ -14,10 +14,13 @@
     "lint:css": "stylelint ./src/**/*.ts ./src/**/*.tsx"
   },
   "dependencies": {
+    "@microsoft/applicationinsights-react-js": "^3.0.5",
+    "@microsoft/applicationinsights-web": "^2.5.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^10.0.3",
+    "history": "^5.0.0",
     "postcss": "^8.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
