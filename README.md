@@ -14,7 +14,7 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
   - [x] husky integration
   - [x] Footer with version
   - [x] Icons library ([styled-icons](https://styled-icons.js.org/)) / Placeholder images ([lorempixel](https://lorempixel.com/))
-  - [x] AppInsights - Component tracking + Error boundary
+  - [x] AppInsights
   - [ ] Loader spinner
   - [ ] PWA: manifest.json, Icon placeholders, Install offline prompt, Update check
 - VSCode
@@ -34,6 +34,7 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
   - [ ] Create config along the lines of https://github.com/wesbos/eslint-config-wesbos
   - [ ] Theming
   - [ ] Redux code splitting per route
+  - [ ] Add AppInsightsErrorBoundary (throwing "Uncaught ReferenceError: __extends is not defined" right now)
 
 ## Useful documents
 
