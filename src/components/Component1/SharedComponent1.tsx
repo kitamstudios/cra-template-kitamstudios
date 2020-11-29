@@ -1,33 +1,25 @@
-import tw, { styled } from 'twin.macro'
+import styled from 'styled-components'
 
-// Style 1: Only requires the tw import.
-const Spacer = tw.div`py-4`
-const Paragraph = tw.p`flex items-center py-8 justify-center text-xl text-white bg-blue-500`
+// Style 1: Only requires the styled import.
+const Spacer = styled.div``
+const Paragraph = styled.p``
 
-// Style 2: Requires both the styled and tw imports.
-const Container = styled.div`
-  ${tw`flex justify-center`}
-`
+// Style 2: Requires both the styled and styled imports.
+const Container = styled.div``
 
-const Button = styled.button`
-  ${tw`
-    px-8 py-4 text-xl font-semibold text-blue-700 bg-transparent border border-blue-500
-    rounded hover:bg-blue-500 hover:text-white hover:border-transparent`}
-`
+const Button = styled.button``
 
 export type SharedComponent1Props = {
   name: string
 }
 
-const X = styled.div`
-  background-color: black;
-`
+const X = styled.div``
 
 export const SharedComponent1 = ({ name }: SharedComponent1Props) => {
   return (
     <X>
       <Spacer />
-      <Paragraph>Hello Create React App + Tailwind + Styled Components! {name}</Paragraph>
+      <Paragraph>Hello from parent: {name}</Paragraph>
       <Spacer />
       <Container>
         <Button>Button</Button>

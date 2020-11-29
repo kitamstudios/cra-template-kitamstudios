@@ -16,7 +16,6 @@ export const Page1Component1 = ({ cname }: Page1Component1Props) => {
       <div>
         <div>
           <div>
-            <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
             <strong className="mr-auto">Bootstrap</strong>
             <small>11 mins ago</small>
           </div>

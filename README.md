@@ -13,22 +13,22 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] husky integration
   - [x] Footer with version
-  - [x] Icons library ([styled-icons](https://styled-icons.js.org/)) / Placeholder images ([lorempixel](https://lorempixel.com/))
   - [x] AppInsights
   - [ ] Loader spinner
   - [ ] PWA: manifest.json, Icon placeholders, Install offline prompt, Update check
+- Styling
+  - [x] [Material-UI](https://material-ui.com/)
+  - [x] [styled-components](https://styled-components.com/)
+  - [x] Placeholder images ([lorempixel](https://lorempixel.com/))
 - VSCode
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
-  - [x] configure settings
-  - [x] suggested extensions
+  - [x] Workspace settings
+  - [x] Workspace recommended extensions
   - [x] F5 debugging from VSCode
-- Styling
-  - [x] styled-components
-  - [x] tailwindcss, twin.macro
-- CI/CD
-  - [x] Build, lint, unit test github workflow
+- CI/CD - GitHub Actions
+  - [x] Build, lint, unit test
   - [x] Deploy to Azure blob storage
-  - [x] Multiple react sites per root folder [.env, homepage in package.json, HashRouter, base href in index.html, manifest.json replace scope during deploy]
+  - [x] Multiple sites per Azure Storage static site [.env, homepage in package.json, HashRouter, base href in index.html, manifest.json replace scope during deploy]
 
 - TODO
   - [ ] Create config along the lines of https://github.com/wesbos/eslint-config-wesbos
