@@ -38,21 +38,21 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS_KSAPPLICATIONS_STORAGE }}
 
-      - name: Build en
+      - name: Build
         run: yarn build
         env:
           REACT_APP_RELATIVE_ROOT: /craks-1 # NOTE: Ensure no trailing '/'
           REACT_APP_VERSION: ${{steps.createbuildversion.outputs.buildversion}}
           REACT_APP_AI_INSTRUMENTATION_KEY: ${{ secrets.AZURE_CREDENTIALS_KSAPPLICATIONS_AI_KEY }}
 
-      - name: Set PWA scope for en
+      - name: Set PWA scope
         uses: benday-inc/set-property-value-in-appsettings@main
         with:
           pathtosettingsfile: './build/manifest.json'
           keyname1: 'scope'
           valuetoset: '/craks-1/'
 
-      - name: Deploy en
+      - name: Deploy
         uses: azure/CLI@v1
         with:
           azcliversion: 2.0.72
