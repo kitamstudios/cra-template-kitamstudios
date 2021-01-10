@@ -13,12 +13,13 @@ Deployed at [craks-1](https://apps.kitamstudios.com/craks-1)
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
   - [x] husky integration
   - [x] Footer with version
+  - [ ] Bring in the full screen stuff from dpt-tools
   - [x] AppInsights
   - [ ] Loader spinner
   - [ ] PWA: manifest.json, Icon placeholders, Install offline prompt, Update check
 - Styling
   - [x] [Material-UI](https://material-ui.com/)
-  - [x] [styled-components](https://styled-components.com/)
+  - [x] [styled-components](https://styled-components.com/) => switch to material styled components
   - [x] Placeholder images ([lorempixel](https://lorempixel.com/))
 - VSCode
   - [x] editorconfig, stylelint, [eslint, prettier](https://medium.com/@brygrill/create-react-app-with-typescript-eslint-prettier-and-github-actions-f3ce6a571c97)
